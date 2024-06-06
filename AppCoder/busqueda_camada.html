@@ -1,0 +1,15 @@
+{% extends "padre.html" %}
+
+{% block  contenidoQueCambia %}
+
+<form action="{% url 'BuscarCurso' %}" method="get">
+
+    <p>Numero de camada: <input type="number" name="camada"></p>
+
+    {{miFormulario.as_p}}
+
+    <button type="submit"> Buscar </button>
+
+</form>
+
+{% endblock contenidoQueCambia %}
