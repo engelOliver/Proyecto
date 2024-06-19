@@ -4,7 +4,14 @@
 
 <p>Buscamos los cursos con el numero de camada: {{camada}}</p>
 
-<p>{{curso.nombre}} - {{curso.camada}}</p>
+<ul>
+  {% for curso in cursos %}
 
+    <li>
+      {{curso.nombre}} - {{curso.camada}}
+    </li>    
+  
+  {% endfor %} 
+</ul>   
 
 {% endblock contenidoQueCambia %}
